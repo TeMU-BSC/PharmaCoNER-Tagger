@@ -39,10 +39,10 @@ PharmaCoNER Tagger is based on NeuroNER, which relies on Tensorflow, Spacy and o
 
 PharmaCoNER Tagger can be installed by downloading or cloning this repository and installing its dependencies. It is recommended to do so in a virtual environment, like venv:
 
-    git clone <REPO URL>
-    python3 -m venv <REPO DIR NAME>
-    source <REPO DIR NAME>/bin/activate
-    python -m pip install -r <REPO DIR NAME>/requirements.txt
+    git clone https://github.com/TeMU-BSC/PharmaCoNER-Tagger.git
+    python3 -m venv PharmaCoNER-Tagger
+    source PharmaCoNER-Tagger/bin/activate
+    python -m pip install -r PharmaCoNER-Tagger/requirements.txt
     python -m spacy download es
 
 These steps should be enough for most of the machines, provided they have a Python distribution. We refer to these two NeuroNER guides for further information on installation:
