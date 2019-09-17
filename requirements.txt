@@ -1,0 +1,8 @@
+networkx
+matplotlib
+scikit-learn
+scipy
+pycorenlp
+tensorflow==1.5
+spacy
+numpy==1.15.4
