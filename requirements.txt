@@ -3,6 +3,6 @@ matplotlib
 scikit-learn
 scipy
 pycorenlp
-tensorflow==1.12.1
+tensorflow==1.12
 spacy
 numpy==1.15.4
