@@ -6,7 +6,7 @@ PharmaCoNER Tagger is a Neural Named Entity Recognition program targeting domain
 
 PharmaCoNER Tagger was developed within PlanTL[^2] in the Barcelona Supercomputing Center[^3].
 
-Both Docker and Singularity images will be soon available.
+Both Docker and Singularity images will be available.
 
 ### Features added to NeuroNER
 
