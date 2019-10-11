@@ -99,7 +99,7 @@ Both token_embedding_dimension and token_lstm_hidden_state_dimension should be s
 ### Basic usage
 
 Once PharmaCoNER Tagger has been installed and the pre-trained GloVe embeddings have been downloaded and moved to the right directory, for running PharmaCoNER with the task corpus execute:
-    python src/main.py
+    cd src/ & python main.py
     
 Assuming the virtual environment is activated and that we are in the root of this repository.
 
@@ -129,8 +129,8 @@ In order to export a model, edit the last lines of src/prepare_trained_model.py:
 
 With regard to output_folder_name, notice that PharmaCoNER Tagger will create a new directory for each training execution in the output folder (by default, in output/). The name of these training directories will be the experiment name ('test', by default, but can be modified in the parameters.ini file, in experiment_name field) plus a timestamp. Identify the desired directory and set the field output_folder_name in src/prepare_trained_model.py accordingly.
 
-Then, run (assuming the virtual environment is activated):
-    python src/prepare_trained_model.py
+Then, run (assuming the virtual environment is activated and the user is in src/):
+    python prepare_trained_model.py
 
 The script will create a folder with the exported model in the directory trained_models/.
 
@@ -139,8 +139,8 @@ To run the exported model, edit the beginning of the trained_models/<model_name>
     use_pretrained_model = True # In order to use a pretrained model, it should always be set to true 
     pretrained_model_folder = ../trained_models/<model_name> # pre-trained model path
 
-Then, execute (again, assuming the virtual environment is activated):
-    python src/main.py --parameters_filepath trained_models/<model_name>/parameters.ini
+Then, execute (again, assuming the virtual environment is activated and the user is in src/):
+    python main.py --parameters_filepath trained_models/<model_name>/parameters.ini
 
 ### Adding domain features
 
